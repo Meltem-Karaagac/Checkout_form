@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Checkout</title>
+</head>
+
+<body>
+    <header>
+        <div class="heading">
+            <h1 id="checkout-title">Checkout</h1>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <div class="full-products">
+            <div class="product1">
+                <img src="img/photo1.png" width=126px height=140px alt="backbag">
+                <div class="productinfo">
+                    <h2>Vintage backbag</h2>
+                    <p>
+                        <strong>$54.99</strong>
+                        <span class="line-through">$94.99</span>
+                    </p>
+                    <div class="quantity-controller">
+                        <button>
+                            <i class="fas fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="product2">
+                <img src="img/photo2.png" alt="shoes" width=126px height=140px>
+                <div class="productinfo">
+                    <h2>Levis Shoes</h2>
+                    <p>
+                        <strong>$74.99</strong>
+                        <span class="line-through">$124.99</span>
+                    </p>
+                    <div class="quantity-controller">
+                        <button>
+                            <i class="fas fa-minus" aria-hidden="true"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="purchase-detail">
+                <p>Shipping</p>
+                <p>$19</p>
+            </div>
+            <div class="purchase-detail-total">
+                <p>Total</p>
+                <p>$148.99</p>
+            </div>
+        </div>
+        <div class="contact-form">
+            <h2>Contact information</h2>
+            <form action="">
+                <div class="email">
+                    <label for="email">Email</label>
+                    <div>
+                        <input type="text" name="email" id="user-email" placeholder="Enter your email address ..."
+                            required>
+                    </div>
+                </div>
+                <div class="phone">
+                    <label for="phone">Phone</label>
+                    <div>
+                        <input type="text" name="phone" id="user-phone" placeholder="Enter your phone..." required>
+
+                    </div>
+                </div>
+                <h2>Shipping-address</h2>
+                <div class="Full name">
+                    <label for="full-name">Full name</label>
+                    <div>
+                        <input type="text" name="full-name" id="user-full-name" placeholder="Enter your Full name..."
+                            required>
+
+                    </div>
+                </div>
+                <div class="Address">
+                    <label for="address">Address</label>
+                    <div>
+                        <input type="text" name="address" id="user-address" placeholder="Enter your address..."
+                            required>
+
+                    </div>
+                    <div class="City">
+                        <label for="City">City</label>
+                        <div class="input-area">
+                            <input type="text" name="city" id="user-city" placeholder="Enter your City..." required>
+
+                        </div>
+                    </div>
+                    <div class="place-section">
+                        <div class="user-country">
+                            <div>
+                                <label for="country">Country</label></div>
+                            <select name="country" id="user-country" required>
+                                <option value="Turkey">Turkey</option>
+                                <option value="German">German</option>
+                                <option value="Italy">Italy</option>
+                                <option value="UK">UK</option>
+                            </select>
+                        </div>
+
+                        <div class="user-post">
+                            <label for="post-code">Post Code</label>
+                            <div>
+                                <input type="text" name="post-code" id="user-post-code"
+                                    placeholder="Enter your post code..." required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <span id="box">See this information next time</span>
+                    </div>
+            </form>
+        </div>
+    </main>
+    <button id="btn-submit" type="submit">Continue</button>
+</body>
+
+</html>

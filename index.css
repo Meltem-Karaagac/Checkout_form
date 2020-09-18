@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    src: url("./Fonts/Montserrat-Regular.ttf");
+    
+}
+
+body{
+    width: 100vw;
+}
+#checkout-title{
+    text-align: center;
+    margin : 50px auto;
+    font-size: 40px;
+    color: black;
+    font-weight: 400;
+   
+   
+}
+
+.wrap{
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "c p";
+}
+
+
+.contact-form{
+    margin-left: 100px;
+    margin-top: 10px;
+    grid-area: c;
+    min-width: 500px;
+}
+
+.full-products{
+    grid-area: p;
+}
+
+#user-email, #user-phone,#user-full-name,#user-address ,#user-city, #user-country, #user-post-code{
+    border: 1px solid #828282;
+    padding: 8px 5px 8px 35px;
+    color: #828282;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 60%;
+    margin: 10px 0px;
+
+}
+
+
+#user-email{
+    background-image: url(./img/email.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+#user-address{
+    background-image: url(./img/town.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+#user-country, #user-post-code{
+    padding: 3px;
+
+}
+#user-full-name{
+    background-image: url(./img/user.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+        
+}
+#user-city{
+    background-image: url(./img/town.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+        
+}
+
+#user-phone{
+    background-image: url(./img/phone.png);
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+}
+
+
+
+label{
+    
+    color: #828282;
+    font-size: 20px;
+    width: 60%;
+    padding-top: 30px ;
+}
+
+h2{
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #333333;
+
+
+}
+.place-section{
+  
+    display: grid;
+    grid-template-columns: 150px 300px;
+    width : auto;
+
+}
+
+    
+
+
+
+.full-products{
+    width: 460px;
+    height: 485px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    flex-direction: column;
+    background-color:rgb(235,235,235);
+
+
+} 
+.product1{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+
+}
+.product2{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+
+} 
+
+
+.productinfo{
+    padding: 0 15px;
+}
+
+.quantity-controller{
+    border: 1px solid;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+.productinfo p strong {
+    padding: 10px;
+    color: #f2994a;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.productinfo p span {
+    color: #4E5150;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+img{
+    border-radius: 10px;
+}
+
+.play-section {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.productinfo h2 {
+    font-size: 16px;
+    color: #4E5150;
+    margin: 5px 0;
+}
+
+
+#btn-submit {
+    width: 100px;
+    height: 40px;
+    padding: 8px 0;
+    border-radius: 10px;
+    background-color: #f2994a;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    display: block;
+    margin: 0 auto;
+
+}
+#user-reminder {
+    display: inline-block;
+    margin-right: 10px;
+}
+#user-reminder~label{
+    display: inline-block;
+   
+}
+.quantity-controller {
+    border-radius: 5px;
+    border: 1px solid rgb(136, 136, 136);
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 5px;
+}
+.quantity-controller button,
+p {
+    position: relative;
+    display: block;
+}
+.quantity-controller p {
+    line-height: 24px;
+}
+.quantity-controller button {
+    margin: 5px 0;
+    border: 0;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+.quantity-controller button i {
+    font-size: 12px;
+}
+
+
+.purchase-detail {
+border-top: 1px solid #BDBDBD;
+display: flex;
+position: relative;
+width: 90%;
+font-family: Mon, Arial, Helvetica, sans-serif;
+padding: 5px;
+margin-top: 50px;
+}
+
+.purchase-detail p {
+    display: block;
+    width: 100%;
+}
+.purchase-detail p:nth-child(1) {
+  
+    text-align: left;
+    font-size: 20px;
+  }
+
+
+.purchase-detail p:nth-child(2) {
+    text-align: right;
+    font-size: 20px;
+  }
+
+
+
+.purchase-detail-total {
+
+    border-top: 1px solid #BDBDBD;
+    display: flex;
+    position: relative;
+    width: 90%;
+    font-family: Mon, Arial, Helvetica, sans-serif;
+    padding: 5px;
+    
+    }
+    
+.purchase-detail-total p {
+        display: block;
+        width: 50%;
+    }
+    
+
+.purchase-detail-total p:nth-child(1) {
+        text-align: left;
+        font-size: 20px;
+      }
+.purchase-detail-total p:nth-child(2) {
+        text-align: right;
+        font-size: 20px;
+      }
+
+
+#box{
+
+  padding: 15px;
+}
+.checkbox{
+
+    margin: 15px 0px;
+}
+
+
+
+
+@media only screen and
+(max-width:768px ){
+
+#checkout-title{
+        text-align: center;
+        margin : 50px auto;
+        font-size: 36px;
+       
+}
+
+main { 
+    position: relative;
+    display: grid;
+    grid-template-columns: 750px ;
+    grid-template-rows: 510px 650px;
+    line-height: 1.5rem;
+    grid-gap: 50px;
+    margin: 5px;
+    
+}
+
+
+.full-products{
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.contact-form{
+    grid-area: 2 / 1 / span 1 / span 1;
+}
+
+
+}
